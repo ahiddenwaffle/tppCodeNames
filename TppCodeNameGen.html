@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by ahiddenwaffle (http://jsbin.com/bujiva/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head> Twitch Plays Pokemon Codename Generator
+<body>
+  <button onclick=generateWord()> Generate a New Word</button>
+  <p id="Wow"></p>
+<script id="jsbin-javascript">
+var vowels = "AEIOUY"
+
+var alphabet =("BCDFGHJKLMNPQRSTVWXYZ")
+
+
+
+function chooseLetter1() {
+  var letter1Pos = Math.floor(Math.random() * 21); var letter1 = alphabet.charAt(letter1Pos)
+return letter1}
+
+function chooseLetter2() {
+  var letter2Pos = Math.floor(Math.random() * 6); var letter2 = vowels.charAt(letter2Pos)
+return letter2}
+
+function chooseLetter3() {
+  var letter3Pos = Math.floor(Math.random() * 21); var letter3 = alphabet.charAt(letter3Pos)
+return letter3}
+
+function chooseLetter4() {
+  var letter4Pos = Math.floor(Math.random() * 6); var letter4 = vowels.charAt(letter4Pos)
+return letter4}
+
+function generateWord(){ document.getElementById("Wow").innerHTML = chooseLetter1() + chooseLetter2() + chooseLetter3() + chooseLetter4()}
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
